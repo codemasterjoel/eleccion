@@ -23,13 +23,9 @@
                     <form>
                         <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Activación del Centro</span>
                         <div class="flex pb-4"> {{-- campo Nivel --}}
-                            <label class="relative inline-flex cursor-pointer "> {{-- campo activo --}}
-                                  <input type="checkbox" value="1" class="peer sr-only" wire:model.live="aperturo" />
-                                  <div class="peer flex h-8 flex-row-reverse items-center gap-4 rounded-full bg-cyan-600 px-3 after:absolute after:left-1 after: after:h-6 after:w-10 after:rounded-full after:bg-white/40 after:transition-all after:content-[''] peer-checked:bg-orange-600 cheked value='0' peer-checked:after:translate-x-full peer-focus:outline-none text-white">
-                                      <span>SI</span>
-                                      <span>NO</span>
-                                  </div>
-                            </label>
+                            <input wire:model="aperturado" type="number" placeholder="Centros Aperturados" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
+                            {{-- <input wire:model="CedulaOrganizador" type="number" placeholder="Rojos" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
+                            <input wire:model="CedulaOrganizador" type="number" placeholder="Azul" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900"> --}}
                         </div>
                         <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Reporte 8:00 AM</span>
                         <div class="flex pb-4"> {{-- campo Nivel --}}
@@ -103,15 +99,11 @@
                             {{-- <input wire:model="parte" type="number" placeholder="Rojos" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
                             <input wire:model="parte" type="number" placeholder="Azul" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900"> --}}
                         </div>
-                        <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">¿Ya cerro el Centro?</span>
+                        <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Centros Cerrados</span>
                         <div class="flex pb-4"> {{-- campo Nivel --}}
-                            <label class="relative inline-flex cursor-pointer "> {{-- campo activo --}}
-                                  <input type="checkbox" value="1" class="peer sr-only" wire:model="cerro" />
-                                  <div class="peer flex h-8 flex-row-reverse items-center gap-4 rounded-full bg-cyan-600 px-3 after:absolute after:left-1 after: after:h-6 after:w-10 after:rounded-full after:bg-white/40 after:transition-all after:content-[''] peer-checked:bg-orange-600 cheked value='0' peer-checked:after:translate-x-full peer-focus:outline-none text-white">
-                                      <span>SI</span>
-                                      <span>NO</span>
-                                  </div>
-                            </label>
+                            <input wire:model="cerrado" type="number" placeholder="Centros Cerrados" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
+                            {{-- <input wire:model="CedulaOrganizador" type="number" placeholder="Rojos" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
+                            <input wire:model="CedulaOrganizador" type="number" placeholder="Azul" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900"> --}}
                         </div>
 
                         <div class="px-4 py-3 sm:px-6 sm:flex">

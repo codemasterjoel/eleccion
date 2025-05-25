@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(ResponsabilidadSeeder::class);
         // $this->call(RegistroLuchadorSeeder::class);
         $this->call(UserSeeder::class);
-        $this->call(ubchSeeder::class);
+        // $this->call(ubchSeeder::class);
         // $this->call(SaimeSeeder::class);
         // $this->call(cneclear
         // Seeder::class);

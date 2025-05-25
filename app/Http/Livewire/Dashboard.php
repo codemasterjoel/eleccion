@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Parroquia;
 use Livewire\Component;
 use App\Models\registro1x10ffm;
 use App\Models\Integrante;
@@ -17,7 +18,7 @@ class Dashboard extends Component
 {
     public $jefe, $integrante, $postulados, $formacions = null;
     public $nbc, $parroquias = null;
-    public $jefexestado, $integrantexestado, $luchadores, $generos, $NivelAcademico, $responsabilidades = null;
+    public $jefexestado, $integrantexestado, $luchadores, $generos, $NivelAcademico, $responsabilidades, $porcentaje = null;
 
     public function render()
     {
@@ -39,9 +40,10 @@ class Dashboard extends Component
         // $this->jefexestado = DB::select('SELECT COUNT(*) as jefes, estados.nombre from registro_luchadors INNER JOIN estados on registro_luchadors.estado_id = estados.id GROUP BY estados.nombre ORDER BY estados.nombre DESC');
         // $this->integrantexestado = DB::select('select estados.nombre, count(*) as integrantes from integrantes inner join registro1x10ffms on integrantes.jefe_id = registro1x10ffms.id INNER join estados on registro1x10ffms.estado_id = estados.id GROUP BY estados.nombre');
         // $this->parroquias = DB::select('select parroquia_id as parroquia, SUM(electores) as electores from ubches GROUP BY parroquia_id');
-        $this->parroquias = ubch::all();
+        $this->parroquias = Parroquia::all();
         // $this->parroquias = ubch::all();
         //dd($this->parroquias);
+        $this->porcentaje = $this->parroquias->sum('final') / $this->parroquias->sum('meta') * 100;
         return view('livewire.dashboard_cuadernillo');
     }
 }

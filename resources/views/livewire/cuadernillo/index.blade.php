@@ -19,22 +19,24 @@
                                     <tr>
                                         <th class="text-uppercase text-dark font-weight-bolder">#</th>
                                         <th class="text-uppercase text-dark font-weight-bolder ps-2">Parroquia</th>
-                                        <th class="text-center text-uppercase text-dark font-weight-bolder">Código</th>
-                                        <th class="text-center text-uppercase text-dark font-weight-bolder">centro</th>
+                                        <th class="text-center text-uppercase text-dark font-weight-bolder">electores</th>
+                                        <th class="text-center text-uppercase text-dark font-weight-bolder">meta</th>
+                                        <th class="text-center text-uppercase text-dark font-weight-bolder">cumplido</th>
                                         <th class="text-center text-uppercase text-dark font-weight-bolder">acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php $indice =0; ?>
-                                    @foreach ($centros as $centro)
+                                    @foreach ($parroquias as $parroquia)
                                         <?php $indice += 1; ?>
                                         <tr>
                                             <td class="ps-4"><p class="font-weight-bold text-dark mb-0"><?php echo $indice ?></p></td>
-                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$centro->parroquia->nombre}}</p></td>
-                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$centro->codigo}}</p></td>
-                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$centro->nombre}}</p></td>
+                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$parroquia->nombre}}</p></td>
+                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$parroquia->electores}}</p></td>
+                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$parroquia->meta}}</p></td>
+                                            <td class="ps-4"><p class="font-weight-bold text-dark mb-0">{{$parroquia->final}}</p></td>
                                             <td class="text-center"><a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Editar Saime">
-                                                <a wire:click="crear('{{$centro->id}}')" class=" text-success px-2 py-1 mb-0" type="button"><span class="material-symbols-outlined">task</span></a>
+                                                <a wire:click="crear('{{$parroquia->id}}')" class=" text-success px-2 py-1 mb-0" type="button"><span class="material-symbols-outlined">task</span></a>
                                                 {{-- <a wire:click="borrar('{{$centro->id}}')" class=" text-danger font-bold py-2 px-4"><span class="material-symbols-outlined">person_cancel</span></a> --}}
                                             </td>
                                         </tr>
@@ -44,7 +46,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                         {{$centros->links()}}
+                         {{-- {{$parroquias->links()}} --}}
                     </div>
                         {{-- <div class="flex items-center justify-center pb-4">
                             <div class="w-full rounded-lg bg-red-500 text-white">

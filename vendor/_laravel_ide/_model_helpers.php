@@ -5132,6 +5132,7 @@ namespace App\Models {
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property mixed $mesas
+     * @property bool $cumplido
      * @property bool|null $cerro
      * @property mixed $final
      * @property mixed $meta
@@ -5173,6 +5174,7 @@ namespace App\Models {
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereMeta($value)
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereFinal($value)
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereCerro($value)
+     * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereCumplido($value)
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereMesas($value)
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereCreatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<ubch>|ubch whereUpdatedAt($value)

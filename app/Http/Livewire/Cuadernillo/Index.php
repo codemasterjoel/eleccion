@@ -14,9 +14,9 @@ class Index extends Component
     protected $paginationTheme = 'bootstrap';
     
     public $parroquias, $parroquiaId, $centros2, $centroId, $id = null;
-    public $parte8, $parte9, $parte10, $parte11, $parte12, $parte1, $parte2, $parte3, $parte4, $parte5, $parte6, $parte7, $final = null;
+    public $parte8, $parte9, $parte10, $parte11, $parte12, $parte1, $parte2, $parte3, $parte4, $parte5, $parte6, $parte7, $final, $cerrado, $aperturado = null;
     public $search = "";
-    public $modal, $cumplido, $cerro, $aperturo = false;
+    public $modal, $cumplido = false;
     public function updatingSearch()
     {
         $this->resetPage();
@@ -24,29 +24,30 @@ class Index extends Component
 
     public function render()
     {
+        $this->parroquias = Parroquia::all();
         // $this->centros = ubch::where('nombre', 'like', "%$this->search%")->simplePaginate(10);
-        return view('livewire.cuadernillo.index', ['centros' => ubch::where('nombre', 'like', "%$this->search%")->paginate(10),]);
-        // return view('livewire.cuadernillo.index');
+        // return view('livewire.cuadernillo.index', ['parroquias' => Parroquia::where('nombre', 'like', "%$this->search%")->paginate(10),]);
+        return view('livewire.cuadernillo.index');
     }
     public function crear($id) 
     {
-        $ubch = ubch::findOrFail($id);
+        $parroquia = Parroquia::findOrFail($id);
 
         $this->id = $id;
-        $this->aperturo = (isset($ubch->aperturo)) ? true : false ;
-        $this->parte8 = $ubch->parte8;
-        $this->parte9 = $ubch->parte9;
-        $this->parte10 = $ubch->parte10;
-        $this->parte11 = $ubch->parte11;
-        $this->parte12 = $ubch->parte12;
-        $this->parte1 = $ubch->parte1;
-        $this->parte2 = $ubch->parte2;
-        $this->parte3 = $ubch->parte3;
-        $this->parte4 = $ubch->parte4;
-        $this->parte5 = $ubch->parte5;
-        $this->parte6 = $ubch->parte6;
-        $this->parte7 = $ubch->parte7;
-        $this->cerro = (isset($ubch->cerro)) ? true : false ;
+        $this->aperturado = $parroquia->aperturado;
+        $this->parte8 = $parroquia->parte8;
+        $this->parte9 = $parroquia->parte9;
+        $this->parte10 = $parroquia->parte10;
+        $this->parte11 = $parroquia->parte11;
+        $this->parte12 = $parroquia->parte12;
+        $this->parte1 = $parroquia->parte1;
+        $this->parte2 = $parroquia->parte2;
+        $this->parte3 = $parroquia->parte3;
+        $this->parte4 = $parroquia->parte4;
+        $this->parte5 = $parroquia->parte5;
+        $this->parte6 = $parroquia->parte6;
+        $this->parte7 = $parroquia->parte7;
+        $this->cerrado = $parroquia->cerrado;
         $this->modal = true;
     }
     public function cerrarModal() 
@@ -56,17 +57,19 @@ class Index extends Component
     }
     public function guardar($id)
     {
-        $ubch = ubch::findOrFail($id);
+        $parroquia = parroquia::findOrFail($id);
 
         $this->final = max($this->parte8, $this->parte9, $this->parte10, $this->parte11, $this->parte12, $this->parte1, $this->parte2, $this->parte3, $this->parte4, $this->parte5, $this->parte6, $this->parte7);
 
-        if ($this->final >= $ubch->meta) {
+        if ($this->final >= $parroquia->meta) {
             $this->cumplido = true;
+        }else {
+            $this->cumplido = false;
         }
 
-        $reporte = ubch::updateOrCreate(['id' => $this->id],
+        $reporte = parroquia::updateOrCreate(['id' => $this->id],
             [
-            'aperturo' => $this->aperturo,
+            'aperturado' => $this->aperturado,
             'parte8' => $this->parte8,
             'parte9' => $this->parte9,
             'parte10' => $this->parte10,
@@ -79,7 +82,7 @@ class Index extends Component
             'parte5' => $this->parte5,
             'parte6' => $this->parte6,
             'parte7' => $this->parte7,
-            'cerro' => $this->cerro,
+            'cerrado' => $this->cerrado,
             'final' => $this->final,
             'cumplido' => $this->cumplido,
         ]);
@@ -90,7 +93,7 @@ class Index extends Component
     public function limpiarCampos()
     {
             $this->id = null;
-            $this->aperturo = null;
+            $this->aperturado =null;
             $this->parte8 = null;
             $this->parte9 = null;
             $this->parte10 = null;
@@ -103,6 +106,6 @@ class Index extends Component
             $this->parte5 = null;
             $this->parte6 = null;
             $this->parte7 = null;
-            $this->cerro = null;
+            $this->cerrado = null;
     }
 }
