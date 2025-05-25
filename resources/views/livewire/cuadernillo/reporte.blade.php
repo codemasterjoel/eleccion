@@ -19,7 +19,10 @@
                     <div class="flex justify-center">
                         {{-- <img src="{{asset('img/logo.svg')}}" class="w-52"> --}}
                     </div>
-                    <h3 class="text-2xl text-cyan-400 font-semibold text-center pb-4">REPORTES</h3>
+                    <h3 class="text-2xl text-cyan-400 font-semibold text-center">REPORTES</h3>
+                    <h3 class="text-2xl text-red-400 font-semibold text-center">PARROQUIA: {{$parroquiaId}}</h3>
+                    <h3 class="text-xl text-red-400 font-semibold text-center pb-4">CENTROS: {{$centros}}</h3>
+
                     <form>
                         <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Activación del Centro</span>
                         <div class="flex pb-4"> {{-- campo Nivel --}}

@@ -13,7 +13,7 @@ class Index extends Component
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
     
-    public $parroquias, $parroquiaId, $centros2, $centroId, $id = null;
+    public $parroquias, $parroquiaId, $centros, $centroId, $id = null;
     public $parte8, $parte9, $parte10, $parte11, $parte12, $parte1, $parte2, $parte3, $parte4, $parte5, $parte6, $parte7, $final, $cerrado, $aperturado = null;
     public $search = "";
     public $modal, $cumplido = false;
@@ -49,6 +49,8 @@ class Index extends Component
         $this->parte7 = $parroquia->parte7;
         $this->cerrado = $parroquia->cerrado;
         $this->modal = true;
+        $this->parroquiaId = $parroquia->nombre;
+        $this->centros = $parroquia->centros;
     }
     public function cerrarModal() 
     {
@@ -107,5 +109,8 @@ class Index extends Component
             $this->parte6 = null;
             $this->parte7 = null;
             $this->cerrado = null;
+            $this->final = null;
+            $this->parroquiaId = null;
+            $this->centros = null;
     }
 }

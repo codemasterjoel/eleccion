@@ -4,10 +4,10 @@
             <div class="card mb-4 mx-4">
                 <div class="card-header pb-0">
                     <div>
-                        <h5 class="mb-2 font-bold">CUADERNILLO</h5>
+                        <h5 class="mb-2 font-bold">REPORTE DE PARTICIPACIÓN</h5>
                     </div>
                     <div class="d-flex flex-row justify-content-between">
-                        <input wire:model.live="search" type="text" placeholder="Filtrar por Centro" class="w-30 px-4 py-2 border border-solid rounded-lg outline-2 font-bold">
+                        {{-- <input wire:model.live="search" type="text" placeholder="Filtrar por Centro" class="w-30 px-4 py-2 border border-solid rounded-lg outline-2 font-bold"> --}}
                     </div>
                     @if($modal)
                         @include('livewire.cuadernillo.reporte')

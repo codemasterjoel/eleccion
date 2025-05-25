@@ -20,9 +20,9 @@
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'cuadernillo' ? 'active' : '' }}" href="{{ route('cuadernillo') }}">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <span class="material-icons {{ in_array(request()->route()->getName(),['cuadernillo']) ? 'text-white' : 'text-dark' }}">home</span>
+                        <span class="material-icons {{ in_array(request()->route()->getName(),['cuadernillo']) ? 'text-white' : 'text-dark' }}">task</span>
                     </div>
-                    <span class="nav-link-text ms-1"><b>CUADERNILLO</b></span>
+                    <span class="nav-link-text ms-1"><b>REPORTE</b></span>
                 </a>
             </li>
             <li class="nav-item">
