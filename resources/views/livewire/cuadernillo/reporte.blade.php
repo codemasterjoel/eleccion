@@ -72,7 +72,7 @@
                             {{-- <input wire:model="parte" type="number" placeholder="Rojos" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
                             <input wire:model="parte" type="number" placeholder="Azul" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900"> --}}
                         </div>
-                        <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Reporte 9:00 PM</span>
+                        <span class="p-2 rounded-tl-lg rounded-bl-lg text-dark font-semibold ">Reporte 3:00 PM</span>
                         <div class="flex pb-4"> {{-- campo Nivel --}}
                             <input wire:model="parte3" type="number" placeholder="Participacion" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">
                             {{-- <input wire:model="parte" type="number" placeholder="Rojos" class=" px-3  w-full text-neutral-900 pl-3 border font-bold outline-2 rounded border-slate-900">

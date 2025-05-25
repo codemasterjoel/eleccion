@@ -168,6 +168,7 @@
                 <div class="ms-auto text-center mt-5 mt-lg-0">
                   <div class=" border-radius-lg h-100">
                     <canvas id="myChart"></canvas>
+                    <canvas id="chartJSContainer" width="600" height="400"></canvas>
                   </div>
                 </div>
               </div>
@@ -245,8 +246,11 @@
       </div>
     </div>
   </main>
-
-  <script type="text/javascript">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  {{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@1.0.0"></script>
+<script type="text/javascript">
+    Chart.plugins.register(ChartDataLabels);
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
       type: 'bar',
@@ -269,6 +273,8 @@
             },
           {
                 label: 'CUMPLIDO',
+                anchor: 'end', // remove this line to get label in middle of the bar
+                align: 'end',
                 legend: {display: true},
                 borderRadius: Number.MAX_VALUE,
                 borderWidth: 4,
@@ -322,3 +328,5 @@
         }
     });
   </script>
+
+

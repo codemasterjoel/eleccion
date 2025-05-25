@@ -25,7 +25,7 @@
     <script src="{{asset('js/leaflet-bing-layer.js')}}" rel="stylesheet"></script>
     <!-- Font Awesome Icons
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> -->
-    <script src="{{ asset('js/Chart.js')}}"></script>
+    {{-- <script src="{{ asset('js/Chart.js')}}"></script> --}}
     <script src="{{ asset('js/chart.min.js')}}"></script>
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
@@ -57,9 +57,13 @@
     <!-- Github buttons
     <script async defer src="https://buttons.github.io/buttons.js"></script> -->
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    {{-- <script src="{{ asset('js/chartist.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('js/chart.js')}}"></script> --}}
+    {{-- <script src="{{ asset('js/chart.min.js')}}"></script> --}}
     <!-- <script src="{{ asset('assets/js/soft-ui-dashboard.js')}}"></script> -->
     <script src="{{ asset('js/jquery.mask.min.js')}}"></script>
     <script src="{{asset('js/tailmater.js')}}"></script>
+
     @livewireScripts
 </body>
 
