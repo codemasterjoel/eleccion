@@ -18,7 +18,7 @@ class Dashboard extends Component
 {
     public $jefe, $integrante, $postulados, $formacions = null;
     public $nbc, $parroquias = null;
-    public $jefexestado, $integrantexestado, $luchadores, $generos, $NivelAcademico, $responsabilidades, $porcentaje = null;
+    public $jefexestado, $integrantexestado, $luchadores, $generos, $NivelAcademico, $responsabilidades, $porcentaje, $porcentajetotal = null;
 
     public function render()
     {
@@ -44,6 +44,7 @@ class Dashboard extends Component
         // $this->parroquias = ubch::all();
         //dd($this->parroquias);
         $this->porcentaje = $this->parroquias->sum('final') / $this->parroquias->sum('meta') * 100;
+        $this->porcentajetotal = $this->parroquias->sum('final') / $this->parroquias->sum('electores') * 100;
         return view('livewire.dashboard_cuadernillo');
     }
 }
