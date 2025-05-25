@@ -168,7 +168,6 @@
                 <div class="ms-auto text-center mt-5 mt-lg-0">
                   <div class=" border-radius-lg h-100">
                     <canvas id="myChart"></canvas>
-                    <canvas id="chartJSContainer" width="600" height="400"></canvas>
                   </div>
                 </div>
               </div>
@@ -567,7 +566,7 @@
               font: function(context) {
                 var w = context.chart.width;
                 return {
-                  size: w < 512 ? 12 : 14,
+                  size: w < 512 ? 8 : 10,
                   weight: 'bold',
                 };
               },
