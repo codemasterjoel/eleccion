@@ -249,7 +249,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   {{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@1.0.0"></script>
-<script type="text/javascript">
+{{-- <script type="text/javascript">
     Chart.plugins.register(ChartDataLabels);
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
@@ -265,8 +265,50 @@
                 data:[24765, 8617,37969,7817,29397,5879,17660,11308,18234,17722,39632,18368,30708,18539,12616,4304,7814,22731,8199,25989,4523,93096],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
                 ],
                 borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
                     'rgba(255, 99, 132, 1)',
                 ],
                 borderWidth: 1
@@ -305,8 +347,50 @@
                 ],
                 backgroundColor: [
                   'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
                 ],
                 borderColor: [
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
                   'rgba(54, 162, 235, 1)',
                 ],
                 borderWidth: 1
@@ -327,6 +411,181 @@
             }
         }
     });
-  </script>
+</script> --}}
+
+<script type="text/javascript">
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        plugins: [ChartDataLabels],
+        type: 'bar',
+        data: {
+            labels: ['23 DE ENERO', 'ALTAGRACIA', 'ANTIMANO', 'CANDELARIA', 'CARICUAO', 'CATEDRAL', 'COCHE', 'EL JUNQUITO', 'EL PARAISO', 'EL RECREO', 'EL VALLE', 'LA PASTORA', 'LA VEGA', 'MACARAO', 'SAN AGUSTIN', 'SAN BERNARDINO', 'SAN JOSE', 'SAN JUAN', 'SAN PEDRO', 'SANTA ROSALIA', 'SANTA TERESA', 'SUCRE'],
+            datasets: [{
+                label: 'META',
+                legend: {display: true},
+                borderRadius: Number.MAX_VALUE,
+                borderWidth: 4,
+                borderSkipped: false,
+                data:[24765, 8617,37969,7817,29397,5879,17660,11308,18234,17722,39632,18368,30708,18539,12616,4304,7814,22731,8199,25989,4523,93096],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            },
+          {
+                label: 'CUMPLIDO',
+                legend: {display: true},
+                borderRadius: Number.MAX_VALUE,
+                borderWidth: 4,
+                borderSkipped: false,
+                data:[
+                  <?php echo $parroquias->where('id', 11)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 1)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 12)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 2)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 17)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 3)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 19)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 18)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 22)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 13)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 14)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 4)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 15)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 16)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 5)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 21)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 6)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 7)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 20)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 8)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 9)->sum('final'); ?>,
+                  <?php echo $parroquias->where('id', 10)->sum('final'); ?>,
+                ],
+                backgroundColor: [
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                ],
+                borderColor: [
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            datalabels:{
+              align: 'end',
+              anchor: 'end',
+              font: function(context) {
+                var w = context.chart.width;
+                return {
+                  size: w < 512 ? 12 : 14,
+                  weight: 'bold',
+                };
+              },
+              color: function(context) {
+                  return context.dataset.borderColor;
+              },
+            },
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: false,
+              text: 'Chart.js Bar Chart'
+            }
+          }
+        }
+    });
+  </script>  
 
 
